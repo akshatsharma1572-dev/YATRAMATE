@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Yatra Mate - Your Travel Companion. Plan, compare, stay, explore and travel smarter across India.">
+
+    <title>Yatra Mate | Your Travel Companion</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+
+            <span class="logo-plane">✈️</span>
+
+            <span>
+                Yatra <b>Mate</b>
+            </span>
+
+        </a>
+
+
+        <nav id="navMenu">
+
+            <a href="#home">Home</a>
+
+            <a href="#transport">Transport</a>
+
+            <a href="#stays">Stays</a>
+
+            <a href="#explore">Explore</a>
+
+            <a href="#planner">AI Planner</a>
+
+            <a href="#safety">Safety</a>
+
+            <a href="#login">Login</a>
+
+        </nav>
+
+
+        <button
+            class="menu-btn"
+            onclick="toggleMenu()">
+
+            ☰
+
+        </button>
+
+    </header>
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                🇮🇳 Smart Tourism • One Travel Companion
+            </div>
+
+
+            <h1>
+                Plan. Book. Explore.<br>
+                <span>Travel Smarter.</span>
+            </h1>
+
+
+            <p>
+                From transport and stays to local experiences,
+                Yatra Mate brings your journey together in one place.
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#planner"
+                    class="btn primary-btn">
+
+                    ✨ Plan My Yatra
+
+                </a>
+
+
+                <a
+                    href="#transport"
+                    class="btn secondary-btn">
+
+                    🚆 Find Transport
+
+                </a>
+
+            </div>
+
+
+            <div class="hero-mini-stats">
+
+                <div>
+                    <strong>6+</strong>
+                    <span>Popular Destinations</span>
+                </div>
+
+                <div>
+                    <strong>3</strong>
+                    <span>Transport Options</span>
+                </div>
+
+                <div>
+                    <strong>24×7</strong>
+                    <span>Travel Companion</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="scroll-down">
+            ↓
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         VALUE PROPOSITION
+    ====================================================== -->
+
+    <section class="features">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🤖
+            </div>
+
+            <h3>AI Trip Planning</h3>
+
+            <p>
+                Personalized itineraries based on your
+                destination, budget and interests.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🚆
+            </div>
+
+            <h3>Smart Transport</h3>
+
+            <p>
+                Compare train, bus and flight options
+                before starting your journey.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🏨
+            </div>
+
+            <h3>Flexible Stays</h3>
+
+            <p>
+                Hotels, villas, homestays and budget
+                stays for every type of traveller.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                💰
+            </div>
+
+            <h3>Budget Friendly</h3>
+
+            <p>
+                Find practical combinations that
+                keep your trip within budget.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         QUICK TRAVEL SEARCH
+    ====================================================== -->
+
+    <section class="quick-search">
+
+        <div class="quick-search-inner">
+
+            <div>
+
+                <span class="eyebrow">
+                    START YOUR YATRA
+                </span>
+
+                <h2>
+                    Where do you want to go?
+                </h2>
+
+            </div>
+
+
+            <div class="quick-search-form">
+
+                <div>
+                    <label>From</label>
+
+                    <input
+                        id="quickFrom"
+                        type="text"
+                        placeholder="Gwalior">
+                </div>
+
+
+                <div>
+                    <label>To</label>
+
+                    <input
+                        id="quickTo"
+                        type="text"
+                        placeholder="Jaipur">
+                </div>
+
+
+                <div>
+                    <label>Travel Date</label>
+
+                    <input
+                        id="quickDate"
+                        type="date">
+                </div>
+
+
+                <button
+                    class="btn primary-btn"
+                    onclick="runQuickSearch()">
+
+                    Search
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TRANSPORT
+    ====================================================== -->
+
+    <section id="transport" class="section transport-section">
+
+        <div class="section-heading">
+
+            <span>SMART TRANSPORT</span>
+
+            <h2>
+                Compare Your Best Way to Travel
+            </h2>
+
+            <p>
+                Compare transport options based on price,
+                duration and convenience.
+            </p>
+
+        </div>
+
+
+        <div class="transport-tabs">
+
+            <button
+                class="transport-tab active"
+                onclick="selectTransport('train', this)">
+
+                🚆 Train
+
+            </button>
+
+
+            <button
+                class="transport-tab"
+                onclick="selectTransport('bus', this)">
+
+                🚌 Bus
+
+            </button>
+
+
+            <button
+                class="transport-tab"
+                onclick="selectTransport('flight', this)">
+
+                ✈️ Flight
+
+            </button>
+
+        </div>
+
+
+        <!-- Transport Search -->
+
+        <div class="transport-search-box">
+
+            <div class="form-group">
+
+                <label>From</label>
+
+                <input
+                    id="transportFrom"
+                    type="text"
+                    value="Gwalior"
+                    placeholder="Departure city">
+
+            </div>
+
+
+            <div class="swap-icon">
+                ⇄
+            </div>
+
+
+            <div class="form-group">
+
+                <label>To</label>
+
+                <input
+                    id="transportTo"
+                    type="text"
+                    value="Jaipur"
+                    placeholder="Destination city">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Date</label>
+
+                <input
+                    id="transportDate"
+                    type="date">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Passengers</label>
+
+                <input
+                    id="transportPassengers"
+                    type="number"
+                    min="1"
+                    value="1">
+
+            </div>
+
+
+            <button
+                class="btn primary-btn"
+                onclick="searchTransport()">
+
+                🔎 Search
+
+            </button>
+
+        </div>
+
+
+        <!-- Transport Results -->
+
+        <div
+            id="transportResults"
+            class="transport-results">
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         STAYS
+    ====================================================== -->
+
+    <section id="stays" class="section stays-section">
+
+        <div class="section-heading">
+
+            <span>STAY YOUR WAY</span>
+
+            <h2>
+                Find a Stay for Every Budget
+            </h2>
+
+            <p>
+                Choose from hotels, villas, homestays,
+                hostels and budget-friendly properties.
+            </p>
+
+        </div>
+
+
+        <div class="stay-filter-bar">
+
+            <div class="form-group">
+
+                <label>Destination</label>
+
+                <input
+                    id="stayDestination"
+                    type="text"
+                    value="Jaipur"
+                    placeholder="City">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Budget / Night</label>
+
+                <select id="stayBudget">
+
+                    <option value="all">
+                        Any budget
+                    </option>
+
+                    <option value="1000">
+                        Under ₹1,000
+                    </option>
+
+                    <option value="2500">
+                        Under ₹2,500
+                    </option>
+
+                    <option value="5000">
+                        Under ₹5,000
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Stay Type</label>
+
+                <select id="stayType">
+
+                    <option value="all">
+                        All stays
+                    </option>
+
+                    <option value="hotel">
+                        Hotel
+                    </option>
+
+                    <option value="villa">
+                        Villa
+                    </option>
+
+                    <option value="homestay">
+                        Homestay
+                    </option>
+
+                    <option value="hostel">
+                        Hostel
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button
+                class="btn primary-btn"
+                onclick="searchStays()">
+
+                🏨 Find Stays
+
+            </button>
+
+        </div>
+
+
+        <div
+            id="stayResults"
+            class="stay-grid">
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         EXPLORE INDIA
+    ====================================================== -->
+
+    <section id="explore" class="section">
+
+        <div class="section-heading">
+
+            <span>DISCOVER INDIA</span>
+
+            <h2>
+                Explore Incredible Destinations
+            </h2>
+
+            <p>
+                Discover heritage, mountains, beaches,
+                culture and local experiences.
+            </p>
+
+        </div>
+
+
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="destinationSearch"
+                placeholder="🔍 Search destinations..."
+                onkeyup="searchDestinations()">
+
+        </div>
+
+
+        <div
+            id="destinationGrid"
+            class="destination-grid">
+
+
+            <!-- JAIPUR -->
+
+            <div
+                class="destination-card"
+                data-name="jaipur rajasthan pink city">
+
+                <div class="destination-image jaipur">
+
+                    <span class="destination-tag">
+                        Heritage
+                    </span>
+
+                </div>
+
+                <div class="destination-content">
+
+                    <h3>Jaipur</h3>
+
+                    <p>
+                        📍 Rajasthan, India
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <span>
+                            ⭐ 4.8
+                        </span>
+
+                        <button
+                            onclick="showDestination('Jaipur')">
+
+                            Explore →
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- AGRA -->
+
+            <div
+                class="destination-card"
+                data-name="agra uttar pradesh taj mahal">
+
+                <div class="destination-image agra">
+
+                    <span class="destination-tag">
+                        Historical
+                    </span>
+
+                </div>
+
+                <div class="destination-content">
+
+                    <h3>Agra</h3>
+
+                    <p>
+                        📍 Uttar Pradesh, India
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <span>
+                            ⭐ 4.7
+                        </span>
+
+                        <button
+                            onclick="showDestination('Agra')">
+
+                            Explore →
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- KERALA -->
+
+            <div
+                class="destination-card"
+                data-name="kerala kochi alleppey backwaters">
+
+                <div class="destination-image kerala">
+
+                    <span class="destination-tag">
+                        Nature
+                    </span>
+
+                </div>
+
+                <div class="destination-content">
+
+                    <h3>Kerala</h3>
+
+                    <p>
+                        📍 Kerala, India
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <span>
+                            ⭐ 4.9
+                        </span>
+
+                        <button
+                            onclick="showDestination('Kerala')">
+
+                            Explore →
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- GOA -->
+
+            <div
+                class="destination-card"
+                data-name="goa beaches beach">
+
+                <div class="destination-image goa">
+
+                    <span class="destination-tag">
+                        Beach
+                    </span>
+
+                </div>
+
+                <div class="destination-content">
+
+                    <h3>Goa</h3>
+
+                    <p>
+                        📍 Goa, India
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <span>
+                            ⭐ 4.8
+                        </span>
+
+                        <button
+                            onclick="showDestination('Goa')">
+
+                            Explore →
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MANALI -->
+
+            <div
+                class="destination-card"
+                data-name="manali himachal mountains adventure">
+
+                <div class="destination-image manali">
+
+                    <span class="destination-tag">
+                        Mountains
+                    </span>
+
+                </div>
+
+                <div class="destination-content">
+
+                    <h3>Manali</h3>
+
+                    <p>
+                        📍 Himachal Pradesh, India
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <span>
+                            ⭐ 4.8
+                        </span>
+
+                        <button
+                            onclick="showDestination('Manali')">
+
+                            Explore →
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- VARANASI -->
+
+            <div
+                class="destination-card"
+                data-name="varanasi banaras spiritual culture">
+
+                <div class="destination-image varanasi">
+
+                    <span class="destination-tag">
+                        Culture
+                    </span>
+
+                </div>
+
+                <div class="destination-content">
+
+                    <h3>Varanasi</h3>
+
+                    <p>
+                        📍 Uttar Pradesh, India
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <span>
+                            ⭐ 4.7
+                        </span>
+
+                        <button
+                            onclick="showDestination('Varanasi')">
+
+                            Explore →
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         AI PLANNER
+    ====================================================== -->
+
+    <section id="planner" class="planner-section">
+
+        <div class="section-heading light">
+
+            <span>
+                YOUR INTELLIGENT TRAVEL COMPANION
+            </span>
+
+            <h2>
+                Build Your Complete Yatra
+            </h2>
+
+            <p>
+                Combine transport, stay, activities and
+                your budget into one travel plan.
+            </p>
+
+        </div>
+
+
+        <div class="planner-container">
+
+
+            <!-- FORM -->
+
+            <div class="planner-form">
+
+                <div class="form-group">
+
+                    <label>
+                        📍 Destination
+                    </label>
+
+                    <select id="destination">
+
+                        <option value="">
+                            Select destination
+                        </option>
+
+                        <option value="Jaipur">
+                            Jaipur
+                        </option>
+
+                        <option value="Goa">
+                            Goa
+                        </option>
+
+                        <option value="Kerala">
+                            Kerala
+                        </option>
+
+                        <option value="Manali">
+                            Manali
+                        </option>
+
+                        <option value="Agra">
+                            Agra
+                        </option>
+
+                        <option value="Varanasi">
+                            Varanasi
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>
+                            📅 Days
+                        </label>
+
+                        <input
+                            id="days"
+                            type="number"
+                            min="1"
+                            max="15"
+                            value="3">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            👥 Travelers
+                        </label>
+
+                        <input
+                            id="travelers"
+                            type="number"
+                            min="1"
+                            value="2">
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        💰 Total Budget (₹)
+                    </label>
+
+                    <input
+                        id="budget"
+                        type="number"
+                        min="1000"
+                        value="15000">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        🏨 Stay Preference
+                    </label>
+
+                    <select id="stayPreference">
+
+                        <option value="budget">
+                            Budget Stay
+                        </option>
+
+                        <option value="standard">
+                            Standard Hotel
+                        </option>
+
+                        <option value="premium">
+                            Premium Stay
+                        </option>
+
+                        <option value="villa">
+                            Villa / Homestay
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        ❤️ Travel Interest
+                    </label>
+
+                    <select id="interest">
+
+                        <option value="culture">
+                            🏛️ Culture & Heritage
+                        </option>
+
+                        <option value="nature">
+                            🌿 Nature & Adventure
+                        </option>
+
+                        <option value="food">
+                            🍛 Food & Local Experiences
+                        </option>
+
+                        <option value="relaxation">
+                            🏖️ Relaxation
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    class="btn primary-btn generate-btn"
+                    onclick="generateTrip()">
+
+                    ✨ Generate My Yatra
+
+                </button>
+
+            </div>
+
+
+            <!-- INFORMATION -->
+
+            <div class="planner-info">
+
+                <div class="ai-icon">
+                    🤖
+                </div>
+
+                <h3>
+                    Meet Your Yatra Mate
+                </h3>
+
+                <p>
+                    Yatra Mate brings the pieces of your
+                    journey together instead of making you
+                    plan everything separately.
+                </p>
+
+
+                <div class="ai-points">
+
+                    <div>
+                        ✓ Transport suggestions
+                    </div>
+
+                    <div>
+                        ✓ Budget-friendly stays
+                    </div>
+
+                    <div>
+                        ✓ Personalized itinerary
+                    </div>
+
+                    <div>
+                        ✓ Local experiences
+                    </div>
+
+                    <div>
+                        ✓ Safety assistance
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ITINERARY
+    ====================================================== -->
+
+    <section
+        id="itinerary"
+        class="section itinerary-section">
+
+        <div class="section-heading">
+
+            <span>
+                YOUR COMPLETE TRIP
+            </span>
+
+            <h2>
+                Personalized Yatra Itinerary
+            </h2>
+
+            <p>
+                Your complete travel plan, including
+                estimated costs, appears here.
+            </p>
+
+        </div>
+
+
+        <div
+            id="itineraryResult"
+            class="itinerary-result">
+
+
+            <div class="empty-itinerary">
+
+                <div class="empty-icon">
+                    🧳
+                </div>
+
+                <h3>
+                    Your journey starts here
+                </h3>
+
+                <p>
+                    Use the AI Planner to create your
+                    personalized Yatra.
+                </p>
+
+                <a
+                    href="#planner"
+                    class="btn primary-btn">
+
+                    Create My Yatra
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SAFETY
+    ====================================================== -->
+
+    <section
+        id="safety"
+        class="safety-section">
+
+        <div class="section-heading">
+
+            <span>
+                TRAVEL WITH CONFIDENCE
+            </span>
+
+            <h2>
+                Yatra Mate Has Your Back
+            </h2>
+
+            <p>
+                Useful safety tools for your journey.
+            </p>
+
+        </div>
+
+
+        <div class="safety-grid">
+
+
+            <div class="safety-card emergency">
+
+                <div class="safety-icon">
+                    🚨
+                </div>
+
+                <h3>
+                    Emergency Services
+                </h3>
+
+                <p>
+                    Important emergency numbers.
+                </p>
+
+                <div class="emergency-numbers">
+
+                    <div>
+                        <strong>112</strong>
+                        <span>Emergency</span>
+                    </div>
+
+                    <div>
+                        <strong>100</strong>
+                        <span>Police</span>
+                    </div>
+
+                    <div>
+                        <strong>108</strong>
+                        <span>Ambulance</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="safety-card">
+
+                <div class="safety-icon">
+                    🏥
+                </div>
+
+                <h3>
+                    Nearby Healthcare
+                </h3>
+
+                <p>
+                    Find healthcare facilities near you.
+                </p>
+
+                <button
+                    class="outline-btn"
+                    onclick="findHealthcare()">
+
+                    Find Healthcare
+
+                </button>
+
+            </div>
+
+
+            <div class="safety-card">
+
+                <div class="safety-icon">
+                    📍
+                </div>
+
+                <h3>
+                    Share My Location
+                </h3>
+
+                <p>
+                    Share your current location with
+                    trusted contacts.
+                </p>
+
+                <button
+                    class="outline-btn"
+                    onclick="shareLocation()">
+
+                    Share Location
+
+                </button>
+
+            </div>
+
+
+            <div class="safety-card">
+
+                <div class="safety-icon">
+                    🌦️
+                </div>
+
+                <h3>
+                    Travel Alerts
+                </h3>
+
+                <p>
+                    Check weather and travel conditions.
+                </p>
+
+                <button
+                    class="outline-btn"
+                    onclick="showAlert()">
+
+                    Check Alerts
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         LOGIN
+    ====================================================== -->
+
+    <section
+        id="login"
+        class="login-section">
+
+        <div class="login-container">
+
+
+            <div class="login-info">
+
+                <span>
+                    WELCOME TO YATRA MATE
+                </span>
+
+                <h2>
+                    One journey.<br>
+                    One companion.
+                </h2>
+
+                <p>
+                    Save your favourite places, itineraries,
+                    stays and trips in one account.
+                </p>
+
+            </div>
+
+
+            <div class="login-box">
+
+                <h2>
+                    Welcome Back 👋
+                </h2>
+
+                <p>
+                    Login to continue your journey.
+                </p>
+
+
+                <form
+                    onsubmit="loginUser(event)">
+
+                    <div class="form-group">
+
+                        <label>
+                            Email
+                        </label>
+
+                        <input
+                            id="email"
+                            type="email"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Password
+                        </label>
+
+                        <input
+                            id="password"
+                            type="password"
+                            placeholder="Enter your password"
+                            required>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn primary-btn login-btn">
+
+                        Login to Yatra Mate
+
+                    </button>
+
+                </form>
+
+
+                <p class="signup-text">
+
+                    New traveller?
+
+                    <a
+                        href="#"
+                        onclick="signup()">
+
+                        Create an account
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+
+            <div class="footer-brand">
+
+                <div class="logo footer-logo">
+
+                    ✈️ Yatra <b>Mate</b>
+
+                </div>
+
+                <p>
+                    Your intelligent travel companion for
+                    smarter, safer and memorable journeys.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Plan
+                </h4>
+
+                <a href="#transport">
+                    Transport
+                </a>
+
+                <a href="#stays">
+                    Stays
+                </a>
+
+                <a href="#planner">
+                    AI Planner
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Discover
+                </h4>
+
+                <a href="#explore">
+                    Destinations
+                </a>
+
+                <a href="#itinerary">
+                    Itinerary
+                </a>
+
+                <a href="#safety">
+                    Safety
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Yatra Mate
+                </h4>
+
+                <p>
+                    🇮🇳 Made for travellers
+                </p>
+
+                <p>
+                    💡 SIH Prototype
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 Yatra Mate — Your Travel Companion
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         MODAL
+    ====================================================== -->
+
+    <div
+        id="modal"
+        class="modal">
+
+        <div class="modal-content">
+
+            <button
+                class="close-btn"
+                onclick="closeModal()">
+
+                ×
+
+            </button>
+
+            <div id="modalBody"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
